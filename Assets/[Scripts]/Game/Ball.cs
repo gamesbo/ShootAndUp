@@ -21,31 +21,26 @@ public class Ball : MonoBehaviour
     {
         if (collision.gameObject.tag == "Right")
         {
-            Haptic.LightTaptic();
             Vector3 dir = new Vector3(-speed, 0, rb.velocity.z).normalized;
             rb.velocity = dir * speed;
         }
         else if (collision.gameObject.tag == "Left")
         {
-            Haptic.LightTaptic();
             Vector3 dir = new Vector3(speed, 0, rb.velocity.z).normalized;
             rb.velocity = dir * speed;
         }
         else if (collision.gameObject.tag == "Down")
         {
-            Haptic.LightTaptic();
             Vector3 dir = new Vector3(rb.velocity.x, 0, speed).normalized;
             rb.velocity = dir * speed;
         }
         else if (collision.gameObject.tag == "Up")
         {
-            Haptic.LightTaptic();
             Vector3 dir = new Vector3(rb.velocity.x, 0, -speed).normalized;
             rb.velocity = dir * speed;
         }
         else if (collision.gameObject.tag == "Obs")
         {
-            Haptic.LightTaptic();
         }
         else if (collision.gameObject.tag == "item")
         {
@@ -57,7 +52,6 @@ public class Ball : MonoBehaviour
             collision.transform.parent.gameObject.GetComponent<Items>().realhitCount++;
             collision.transform.parent.gameObject.GetComponent<Items>().realplanehitCount++;
             collision.transform.parent.gameObject.GetComponent<Items>().planehitCount++;
-            //Instantiate(Resources.Load("particles/Money"),transform.position, Quaternion.identity);
             if(collision.transform.parent.gameObject.GetComponent<Items>().hitCount >= 150)
             {
                 if (isWin) return;

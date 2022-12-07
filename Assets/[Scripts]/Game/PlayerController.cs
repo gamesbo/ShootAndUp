@@ -58,7 +58,6 @@ public class PlayerController : MonoBehaviour
             {
                 if (Input.GetMouseButtonDown(0))
                 {
-                    Haptic.LightTaptic();
                     if (!firstTouch)
                     {
                         StartCoroutine(DELAY());

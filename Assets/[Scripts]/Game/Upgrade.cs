@@ -126,7 +126,6 @@ public class Upgrade : MonoBehaviour
         if (gm.speedLevel == 10) return;
         if (gm.money >= gm.SpeedCost[gm.speedLevel + 1])
         {
-            Haptic.LightTaptic();
             Speedanim.SetTrigger("Click");
             PlayerPrefs.SetInt("speed-level", ++gm.speedLevel);
             PlayerPrefs.Save();
@@ -142,7 +141,6 @@ public class Upgrade : MonoBehaviour
         if (gm.rangeLevel == 10) return;
         if (gm.money >= gm.RangeCost[gm.rangeLevel + 1])
         {
-            Haptic.LightTaptic();
             Rangeanim.SetTrigger("Click");
             PlayerPrefs.SetInt("range-level", ++gm.rangeLevel);
             PlayerPrefs.Save();
@@ -162,7 +160,6 @@ public class Upgrade : MonoBehaviour
         if (gm.incomeLevel == 15) return;
         if (gm.money >= gm.IncomeCosts[gm.incomeLevel + 1])
         {
-            Haptic.LightTaptic();
             Incomenim.SetTrigger("Click");
             PlayerPrefs.SetInt("income-level", ++gm.incomeLevel);
             PlayerPrefs.Save();
@@ -176,7 +173,6 @@ public class Upgrade : MonoBehaviour
     public void AddGoldenBall()
     {
         if (!UIManager.instance.gamePanel.checkBallButtons) return;
-        Haptic.LightTaptic();
         UIManager.instance.gamePanel.checkBallPanel = false;
         UIManager.instance.gamePanel.bar.GetComponent<ProgressBarPro>().Value = 0;
         GameObject goldenBall = Instantiate(Resources.Load("Goldenball"), PlayerController.instance.transform.GetChild(0).GetChild(0).position, Quaternion.identity) as GameObject;
@@ -186,7 +182,6 @@ public class Upgrade : MonoBehaviour
     public void AddLazerBall()
     {
         if (!UIManager.instance.gamePanel.checkBallButtons) return;
-        Haptic.LightTaptic();
         UIManager.instance.gamePanel.checkBallPanel = false;
         UIManager.instance.gamePanel.bar.GetComponent<ProgressBarPro>().Value = 0;
         GameObject Plasmaball = Instantiate(Resources.Load("Plasmaball"), PlayerController.instance.transform.GetChild(0).GetChild(0).position, Quaternion.identity) as GameObject;
@@ -196,7 +191,6 @@ public class Upgrade : MonoBehaviour
     public void AddFireBall()
     {
         if (!UIManager.instance.gamePanel.checkBallButtons) return;
-        Haptic.LightTaptic();
         UIManager.instance.gamePanel.checkBallPanel = false;
         UIManager.instance.gamePanel.bar.GetComponent<ProgressBarPro>().Value = 0;
         GameObject fireBall = Instantiate(Resources.Load("Fireball"), PlayerController.instance.transform.GetChild(0).GetChild(0).position, Quaternion.identity) as GameObject;
@@ -206,7 +200,6 @@ public class Upgrade : MonoBehaviour
     public void AddBombBall()
     {
         if (!UIManager.instance.gamePanel.checkBallButtons) return;
-        Haptic.LightTaptic();
         UIManager.instance.gamePanel.checkBallPanel = false;
         UIManager.instance.gamePanel.bar.GetComponent<ProgressBarPro>().Value = 0;
         GameObject Bombball = Instantiate(Resources.Load("Bombball"), PlayerController.instance.transform.GetChild(0).GetChild(0).position, Quaternion.identity) as GameObject;
