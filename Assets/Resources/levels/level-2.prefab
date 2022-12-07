@@ -699,14 +699,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1146275429521836690}
-  m_LocalRotation: {x: 0.53729963, y: 0, z: 0, w: 0.8433915}
-  m_LocalPosition: {x: 0, y: 56.5, z: -10.6}
+  m_LocalRotation: {x: 0.55985224, y: -0, z: -0, w: 0.8285924}
+  m_LocalPosition: {x: 0, y: 78.05, z: -10.94}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1146275430801023751}
   m_Father: {fileID: 1146275431265012469}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 65, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 68.091, y: 0, z: 0}
 --- !u!20 &1146275429521836684
 Camera:
   m_ObjectHideFlags: 0
@@ -1673,12 +1673,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clickSpeed: 0
+  withPlane: 0
   onClick: 0
   isWin: 0
   minY: 40
   maxY: 75
   arrow: {fileID: 1146275429496995353}
   leveltxt: {fileID: 2956935898937803017}
+  planetxt: {fileID: 0}
   moneyList: []
 --- !u!1 &1146275429964926958
 GameObject:
@@ -3487,22 +3489,27 @@ PrefabInstance:
     - target: {fileID: 1558364467735662357, guid: 73dd4105bd678514fad3e03bf88b24b9,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -3.26
+      value: 1.04
       objectReference: {fileID: 0}
     - target: {fileID: 1558364467735662357, guid: 73dd4105bd678514fad3e03bf88b24b9,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.9514472
       objectReference: {fileID: 0}
     - target: {fileID: 1558364467735662357, guid: 73dd4105bd678514fad3e03bf88b24b9,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0.30781227
       objectReference: {fileID: 0}
     - target: {fileID: 1558364467735662357, guid: 73dd4105bd678514fad3e03bf88b24b9,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 17.39
+      value: 17.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1558364467735662357, guid: 73dd4105bd678514fad3e03bf88b24b9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 35.855
       objectReference: {fileID: 0}
     - target: {fileID: 4134321881560097386, guid: 73dd4105bd678514fad3e03bf88b24b9,
         type: 3}
